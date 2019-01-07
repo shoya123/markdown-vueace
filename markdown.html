@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>マークダウンエディタ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+        }
+
+        .ace_editor{
+            border-right: 1px solid #ccc;
+        }
+        .ace_editor,
+        #preview{
+            width: 50% !important;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+    </div>
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/lodash@4.16.0"></script>
+    <script src="bundle.js"></script>
+
+</body>
+</html>
